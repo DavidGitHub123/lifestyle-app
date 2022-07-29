@@ -1,0 +1,280 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <title>Lifestyle App</title>
+</head>
+<body>
+
+  <div class="top-container">
+    <div class="container-column card">
+      <h1>Hello David,<br> <span>Welcome to your day!</span></h1>
+
+      <div class="flex">
+        <div id="time"></div> <!-- clock -->
+        <div id="date"></div> <!-- date -->
+      </div>
+
+    </div>   <!-- container-column end -->
+
+    <!-- Calendar -->
+    <div class="">
+
+    <div class="event-container">
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">8</div>
+            <div class="month">Nov</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Business Development Meeting</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="img/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">8</div>
+            <div class="month">Nov</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Client strategy session</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="img/time.png" alt="" /> 10:45 am
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="event-container">
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">8</div>
+            <div class="month">Nov</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Client strategy session</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="img/time.png" alt="" /> 10:45 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">8</div>
+            <div class="month">Nov</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Client strategy session</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="img/time.png" alt="" /> 10:45 am
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>      <!-- Calendar end-->
+
+    <!-- Motivational quotes -->
+    <div class="card motivate-section">     
+      <div class="flex-quote">
+        <h1><span>Motivational</span> quote?</h1>
+        <button id="toggle" class="get-quote">Get Quote</button>
+      </div>
+      <p id="quote"></p>
+      <h3 id="author"></h3>
+  
+      <select id='voiceList' class="hide"></select>
+      <!-- <input id='txtInput'/>    -->
+      <!-- <button id='btnSpeak'>Speak!</button> -->
+    </div> <!-- motivational quote end -->
+
+  </div> <!-- End welcome, calendar, quote-->
+
+   <div class="container-row">
+  
+    <!-- Weather-->
+    <div class="card">
+        <h3 class="city">Weather in Denver</h3>
+        <div class="weather">
+            <h3 class="temp">51°C</h3>
+            <div class="weather-flex">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                <div class="description">Cloudy</div>
+            </div>
+            <div class="humidity">Humidity: 60%</div>
+            <div class="wind">Wind speed: 6.2 km/h</div>
+        </div>
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button class="search-btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>   <!-- weather-card-end -->
+
+  <!-- News -->
+  <div class="card">  
+      <div class="loading news-item">
+          <h3>Today's Headlines</h3>
+          <div class="flex news-margin">
+              <h3 class="name">Media Outlet</h3>
+              <div class="flex">
+                  <a class="buttonLink"><button>Read</button></a>
+                  <a class="imageLink news-buttom-img"><button>Image</button></a>
+              </div>
+          </div>
+        <p class="title news-headline">Headline</p>
+      </div>
+      <button class="load-more" id="load-more">Another Article</button>
+  </div>  <!-- News-card-end -->
+        
+
+  <div class="card">  <!-- Music-card -->
+    <h3 class="city">For Your Listening Pleasure</h3>
+      <div class="music-container" id="music-container">
+          <div class="music-info">
+            <h4 id="title"></h4>
+            <div class="progress-container" id="progress-container">
+              <div class="progress" id="progress"></div>
+            </div>
+          </div>
+    
+          <audio src="music/A Hard Day's Night - The Beatles.mp3" id="audio"></audio>
+    
+          <div class="img-container">
+            <img src="img/Hard Days Night.jpg" alt="music-cover" id="cover" />
+          </div>
+    
+          <div class="navigation">
+            <button id="prev" class="action-btn">
+              <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+              <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+              <i class="fas fa-forward"></i>
+            </button>
+          </div>
+          
+        </div>
+  </div>   <!-- Music-card-end -->
+
+  </div>  <!-- row-1-end -->
+
+
+  <div class="container-row">  <!-- row-2-start -->
+
+    <div class="card">  <!-- Dinner-card -->
+      <h3>Dinner Ideas</h3>
+      <div class="">
+        <form id="submit">
+          <input type="text" id="search" class="search-bar" placeholder="Search by meal ..."/>
+          <button class="search-btn" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <button class="random-btn flex" id="random">
+          <label>Roll the Dice</label>
+          <i class="fas fa-random"></i>
+        </button>
+      </div>
+
+      <div id="result-heading"></div>
+      <div id="single-meal"></div>
+      <div id="meals" class="meals"></div>
+  </div>  <!-- Dinner-card-end -->
+
+
+  <div class="card"> <!-- Team-card-start -->
+      <div class="container">
+          <header class="team-header">
+              <h3 class="title">Product Management Team</h3>
+                  <input type="text" class="search-bar" id="filter" placeholder="Search">
+          </header>     
+          <ul id="result" class="user-list">
+              <li>
+                  <h3>Loading ...</h3>
+              </li>
+          </ul>
+        </div>
+  </div> <!-- Team-card-end -->
+
+  <div class="card">  <!-- Clients-card-start -->
+      <h3><strong>Client</strong> Wealth</h3>
+
+      <div class="client-btns">
+          <button id="show-millionaires">Show Millionaires <i class="fas fa-dollar-sign btn-spacing"></i></button>
+          <button id="sort">Sort Richest <i class="fas fa-arrow-down btn-spacing"></i></button>
+          <button id="calculate-wealth">Calculate Wealth <i class="fas fa-calculator btn-spacing"></i></button>
+      </div>
+      <div>
+        <main id="main"></main>
+      </div>
+  </div>  <!-- Clients-card-end -->
+
+
+        </div>   <!-- row-2-end -->
+
+        <script src="../dist/bundle.js"></script>
+      <!--
+    <script src="script_clock.js"></script> 
+    <script src="script_quote.js"></script> 
+    <script src="script_weather.js"></script> 
+    <script src="script_news.js"></script>
+    <script src="script_music.js"></script> 
+    <script src="script_dinner.js"></script> 
+    <script src="script_team.js"></script> 
+    <script src="script_clients.js"></script> 
+-->
+   
+</body>
+</html>
